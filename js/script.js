@@ -7,9 +7,10 @@ if (isNaN(km) || isNaN(age)) {
     alert('Please insert valid values!')
     location.reload(); // Reloads the page, resetting prompt values.
 }   
-/* Triggers if *only* non-number characters are input in either prompt.    
-   If a value includes both letters *and* numbers, everything after (and
-   including) the first letter gets ignored, even more numbers. */
+/* Triggers if non-number characters are input in either prompt
+   *before* any number.
+   If a value includes non-number characters that follow numbers,
+   everything after (and including) the first one gets ignored */
 
 var price = km*0.21;
 
