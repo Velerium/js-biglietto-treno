@@ -27,27 +27,27 @@ if (age === 18) {
     if (ageMonth < month) {
         age = 17;
 
-    }   else if (ageMonth === month) {
+     }  else if (ageMonth === month) {
         var ageDay = d.getDate();
         if (ageDay < day) {
             age = 17;
         }
     }
-}
-
-if (age === 65) {
+ }  else if (age === 65) {
     var ageMonth = d.getMonth();
 
     if (ageMonth > month) {
         age = 66;
 
-    }   else if (ageMonth === month) {
+     }  else if (ageMonth === month) {
         var ageDay = d.getDate();
         if (ageDay > day) {
             age = 66;
         }
     }
 }
+
+
 
 var price = km*0.21;
 
